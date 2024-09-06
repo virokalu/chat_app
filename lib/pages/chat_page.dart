@@ -140,7 +140,7 @@ class _ChatPageState extends State<ChatPage> {
     return Container(
         alignment: alignment,
         child:
-            ChatBubble(message: data["message"], isCurrentUser: isCurrentUser));
+            ChatBubble(message: data["message"], isCurrentUser: isCurrentUser, messageId: doc.id, userId: data['senderId'] ,));
   }
 
   Widget _buildUserInput() {
